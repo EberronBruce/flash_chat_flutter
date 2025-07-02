@@ -57,7 +57,7 @@ class WelcomeScreenState extends State<WelcomeScreen>
                 Hero(
                   tag: heroLogoTag,
                   child: SizedBox(
-                    height: 60.0,
+                    height: 50.0,
                     child: Image.asset('images/logo.png'),
                   ),
                 ),
@@ -72,6 +72,7 @@ class WelcomeScreenState extends State<WelcomeScreen>
                       ),
                     ),
                   ],
+                  repeatForever: true,
                 ),
               ],
             ),
