@@ -54,11 +54,13 @@ class WelcomeScreenState extends State<WelcomeScreen>
           children: <Widget>[
             Row(
               children: <Widget>[
-                Hero(
-                  tag: heroLogoTag,
-                  child: SizedBox(
-                    height: 50.0,
-                    child: Image.asset('images/logo.png'),
+                Flexible(
+                  child: Hero(
+                    tag: heroLogoTag,
+                    child: SizedBox(
+                      height: 60.0,
+                      child: Image.asset('images/logo.png'),
+                    ),
                   ),
                 ),
                 AnimatedTextKit(
